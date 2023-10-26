@@ -1,0 +1,21 @@
+<sk-application ng-controller="ApontamentoLeitorController as ctrl">
+  <div class="container">
+    <div class="divForm">
+      <span class="title">Apontamento de Produção</span>
+      <form class="leitorForm">
+        <label for="inputBarras" class="labelBarras">Código de Barras</label>
+        <input
+          id="inputBarras"
+          autocomplete="off"
+          type="text"
+          tooltip="Informe aqui o código de barras do volume"
+          class="codbarras"
+          autofocus
+        />
+      </form>
+    </div>
+    <div id="snackbar" >
+      {{success ? statusMsg.Sucesso : statusMsg.Falha}}
+    </div>
+  </div>
+</sk-application>
